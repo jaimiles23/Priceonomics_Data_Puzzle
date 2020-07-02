@@ -4,7 +4,7 @@
 Author: Jai Miles
 Date: 07/01/2020
 Purpose: Priceonomics Puzzle
-Source: https://priceonomics.com/priceonomics-freelance-gigs-for-data-journalists/
+Source: https://priceonomics.com/the-priceonomics-data-puzzle-treefortbnb/
 
 
 Challenge: Tell us the median price of booking a room in each of the top 100 cities in this data set. 
@@ -39,7 +39,7 @@ Section Steps
 1. Install libraries
 2. Load libraries
 
-dplyr -data manipulation and analysis.
+dplyr - data manipulation and analysis.
 purr - data validation.
 huxtable - pretty printing results to console.
 "
