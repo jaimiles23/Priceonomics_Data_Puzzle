@@ -78,5 +78,5 @@ With a bit more digging, I found the following statistics for Indianapolis:
 The mean price for a treefortBnb in Indianapolis is $915.40 with a standard deviation of 969.65. Even more, tree houses cost all the way to 5,500! The spirit of the median (and all measures central tendency) is to get an understanding of _normal_ in the dataset. Although these are standard measures, something is definitely wrong here. I can't imagine many people paying $5,500 for a treehouse!
 
 Thankfully, priceonomics also included the number of reviews that each listing has. Below is a scatterplot of each Indianapolis unit price vs number of reviews.
-[Price vs num reviews in Indianapolis, IN.pdf](https://user-images.githubusercontent.com/50056791/86526191-7ac56880-be45-11ea-8a72-f72ae9a22816.png)
+[!](https://user-images.githubusercontent.com/50056791/86526191-7ac56880-be45-11ea-8a72-f72ae9a22816.png)
 
