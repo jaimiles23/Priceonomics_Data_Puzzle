@@ -40,8 +40,9 @@ Section Steps
 2. Load libraries
 
 dplyr - data manipulation and analysis.
-purr - data validation.
+purr - data validation and extra analysis at end.
 huxtable - pretty printing results to console.
+ggplot2 - additional data exploration.
 "
 
 
@@ -53,6 +54,7 @@ huxtable - pretty printing results to console.
 # install.packages("dplyr")
 # install.packages("purrr")
 # install.packages("huxtable")
+# install.packages("ggplot2") 
 
 
 ##########
@@ -62,6 +64,7 @@ huxtable - pretty printing results to console.
 library(dplyr)
 library(purrr)
 library(huxtable)
+library(ggplot2)
 
 
 
@@ -332,6 +335,64 @@ is not affected by outliers. I would be interested to closer inspect the city's 
 It is possible that the data follows a bimodal distribution, and there are more rentals offered 
 in the higher pricing cluster. This would explain a higher median.
 "
+data_indianapolis_in <- data_treefortbnb %>% 
+  filter(state == "in", city == "indianapolis")
+
+View(data_indianapolis_in)
+
+data_indianapolis_in %>% 
+  summarise(
+    num_units = n(),
+    mean_cost = mean(price_USD),
+    st_dev = sd(price_USD),
+    min_price = min(price_USD),
+    max_price = max(price_USD)
+  )
+
+"Note: slight difficulties with quantiles in dplyr. Need to pre-define quantiles, names, and functions before running."
+percents <- c(0.25, 0.5, 0.75)    # define quantiles of interest
+perc_names <- map_chr(percents, ~paste0(.x * 100, "%"))   # Create quantile names.
+p_funcs <- map(percents, ~ partial(quantile, probs = .x, na.rm = TRUE)) %>% 
+  set_names(nm = perc_names)
+p_funcs
+
+
+data_indianapolis_in %>% 
+  summarise_at(
+    vars(price_USD), funs(!!!p_funcs)
+  )
+
+
+"
+Wow! Maximum price of $5,500 and q3 at $1,200. Something is definitely happening with the
+treehouse market in Indianapolis.
+"
+
+ggplot(data = data_indianapolis_in, mapping = aes(x = price_USD)) + 
+  geom_boxplot()
+
+
+"
+There are quite a few outliers past 2,000 USD.
+The spirit of a central measure (median above) is to get something normal. 
+With 251 observations, I still would not call anything in excess of $2,000 normal.
+
+Let's plot this data vs the number of reviews.
+"
+colnames(data_indianapolis_in)
+ggplot(data = data_indianapolis_in, 
+       mapping = aes(x = price_USD, y = num_reviews)
+       ) + 
+  geom_point() +
+  ggtitle("Price vs num reviews in Indianapolis, IN")
+
+"
+The graph shows that prices above $1,000 USD have 0 reviews.
+If we consider reviews to be a proxy variable for visits, we can assume that these
+units do not constitute normal treefortBnb experiences.
+"
+
+
 
 
 ##########
@@ -353,3 +414,4 @@ I would be interested in double checking these low-entry units for clerical erro
 In the case of Berkeley, CO, this may reflect the data entry system and the correct
 city is Berkeley, CA.
 "
+
