@@ -80,3 +80,4 @@ The mean price for a treefortBnb in Indianapolis is $915.40 with a standard devi
 Thankfully, priceonomics also included the number of reviews that each listing has. Below is a scatterplot of each Indianapolis unit price vs number of reviews.
 ![.](https://user-images.githubusercontent.com/50056791/86526191-7ac56880-be45-11ea-8a72-f72ae9a22816.png)
 
+The graph shows that prices above $1,000 USD have 0 reviews. If we consider reviews to be a proxy variable for visits, we can assume that these units do not constitute normal treefortBnb experiences. Of course, Treefort BnB is fictional to begin with and none of the data is a "real" experience. However, it was a useful exercise to demonstrate how a single measure of central tendency can tell a misleading story (:
