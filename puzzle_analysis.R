@@ -51,21 +51,27 @@ ggplot2 - additional data exploration.
 ##########
 ## Uncomment below to install
 
-# install.packages("dplyr")
-# install.packages("purrr")
-# install.packages("huxtable")
-# install.packages("ggplot2") 
+packages = c(
+  "dplyr",
+  "purrr",
+  "huxtable",
+  "ggplot2"
+)
+
+# for (p in packages) {
+#   if (!require(p, character.only = T)) {
+#     install.packages(p)
+#   }
+# }
 
 
 ##########
 # Load
 ##########
 
-library(dplyr)
-library(purrr)
-library(huxtable)
-library(ggplot2)
-
+for (p in packages) {
+  library(p, character.only = T)
+}
 
 
 
