@@ -390,6 +390,7 @@ ggplot(data = data_indianapolis_in,
        mapping = aes(x = price_USD, y = num_reviews)
        ) + 
   geom_point() +
+  geom_smooth() +
   ggtitle("Price vs num reviews in Indianapolis, IN")
 
 "
