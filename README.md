@@ -78,6 +78,7 @@ With a bit more digging, I found the following statistics for Indianapolis:
 The mean price for a treefortBnb in Indianapolis is $915.40 with a standard deviation of 969.65. Even more, tree houses cost all the way to 5,500! The spirit of the median (and all measures central tendency) is to get an understanding of _normal_ in the dataset. Although these are standard measures, something is definitely wrong here. I can't imagine many people paying $5,500 for a treehouse!
 
 Thankfully, priceonomics also included the number of reviews that each listing has. Below is a scatterplot of each Indianapolis unit price vs number of reviews.
-![.](https://user-images.githubusercontent.com/50056791/86526191-7ac56880-be45-11ea-8a72-f72ae9a22816.png)
+![indianapolis_price_vs_num_reviews](https://user-images.githubusercontent.com/50056791/86996325-334e1d80-c160-11ea-851d-f29417e14f4d.png)
+
 
 The graph shows that prices above $1,000 USD have 0 reviews. If we consider reviews to be a proxy variable for visits, we can assume that these units do not constitute normal treefortBnb experiences. Of course, Treefort BnB is fictional to begin with and none of the data is a "real" experience. However, it was a useful exercise to demonstrate how a single measure of central tendency can tell a misleading story (:
