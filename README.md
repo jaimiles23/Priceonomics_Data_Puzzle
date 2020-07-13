@@ -1,6 +1,6 @@
 
 # Priceonomics Data Puzzle
-TreefortBnb, Airbnb's fictious rival, lists treeforts around the United States for people to rent. Priceonomics curated a dataset with the pricing of different treeforts and challenged us to find the median price of booking a treefort in each of the top 100 cities. Full backstory and challenge available [here](https://priceonomics.com/the-priceonomics-data-puzzle-treefortbnb/).
+TreefortBnb, Airbnb's fictious rival, connects treeforts around the United States for people to rent. Priceonomics curated a dataset with the pricing of different treeforts and challenged us to find the median price of booking a treefort in each of the top 100 cities. Full backstory and challenge available [here](https://priceonomics.com/the-priceonomics-data-puzzle-treefortbnb/).
 
 More specifically, Priceonomics requested us to:
 - Send us back a table with a list of the median price in each city, ranked from most to least expensive.
