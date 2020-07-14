@@ -40,7 +40,7 @@ I was surprised that Indianapolis, IN topped the list. As a state capital, I exp
 
 To better understand the dataset, I plotted a histogram of the USD price for all units.
 
-![](https://user-images.githubusercontent.com/50056791/87259128-cedfd680-c45d-11ea-990a-8f054ab1e797.png)
+![](https://user-images.githubusercontent.com/50056791/87379074-3c663280-c544-11ea-9fce-fe0c8c77b46a.png)
 
 There are _many_ treeforts above $2,000! There are even some units listed for $10,000!
 
