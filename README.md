@@ -41,6 +41,7 @@ I was surprised that Indianapolis, IN topped the list. As a state capital, I exp
 To better understand the dataset, I plotted a histogram of the USD price for all units.
 
 ![](https://user-images.githubusercontent.com/50056791/87379074-3c663280-c544-11ea-9fce-fe0c8c77b46a.png)
+
 *created in puzzle_solution.ipynb*
 
 There are _many_ treeforts above $2,000! There are even some units listed for $10,000!
@@ -60,7 +61,8 @@ Next, I looked specifically at the listings for the most expensive median city i
 The mean price for a treefortBnb in Indianapolis is $915.40, with a standard deviation of 969.65, and a range from $33 - $5,500! There is something questionable about the data here - I can't imagine many people paying $5,500 for a treehouse!
 
 Priceonomics also conveniently records the number of reviews for each treefort. Below is a scatterplot of each Indianapolis $ Price vs Number of Reviews.
-![indianapolis_price_vs_num_reviews](https://user-images.githubusercontent.com/50056791/86996325-334e1d80-c160-11ea-851d-f29417e14f4d.png)
+![](https://user-images.githubusercontent.com/50056791/86996325-334e1d80-c160-11ea-851d-f29417e14f4d.png)
+
 *created inpuzzle_solution.R*
 
 The graph shows that prices above $1,000 USD generally have 0 reviews.
@@ -69,6 +71,7 @@ The graph shows that prices above $1,000 USD generally have 0 reviews.
 If we consider reviews to be a proxy measure for visits, we can assume that these units do not constitute normal treefortBnb experiences. I suspected that this same relationship is present in the larger dataset and thus graphed a scatterplot of Unit Price USD vs Number of Reviews for all data.
 
 ![](https://user-images.githubusercontent.com/50056791/87259605-59760500-c461-11ea-8c22-59cd2c4e2248.png)
+
 *created in puzzle_solution.ipynb*
 
 Bingo! It appears that the more expensive the treefort is, the fewer reviews it has. The spirit of the median (and other measures of central tendency) is to get an understanding of _normal_ in the dataset. I doubt that a $10,000 treefort consistutes a 'normal' experience for renters.
