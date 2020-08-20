@@ -76,7 +76,7 @@ If we consider reviews to be a proxy measure for visits, we can assume that thes
 
 Bingo! It appears that the more expensive the treefort is, the fewer reviews it has. The spirit of the median (and other measures of central tendency) is to get an understanding of _normal_ in the dataset. I doubt that a $10,000 treefort consistutes a 'normal' experience for renters.
 
-To better represent normal, I re-calculated the median price of booking a treefort in ecah of the top 100 cities, given the records had 1+ reviews.
+To better represent normal, I re-calculated the median price of booking a treefort in each of the top 100 cities, given the records had 1+ reviews.
 | city |	state | median_price_usd |	
 | :-- | :-- | --: |
 | Carmel |	CA |	300.0 |
