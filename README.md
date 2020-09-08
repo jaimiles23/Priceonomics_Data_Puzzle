@@ -1,5 +1,11 @@
-
 # Priceonomics Data Puzzle
+- [Priceonomics Data Puzzle](#priceonomics-data-puzzle)
+  - [About](#about)
+  - [Directory](#directory)
+  - [Results](#results)
+  - [Additional analysis](#additional-analysis)
+
+## About
 TreefortBnb, Airbnb's fictious rival, connects luxurious treefort homes around the United States. Priceonomics curated a dataset with the pricing of different treeforts and challenged us to find the median price of booking a treefort in each of the top 100 cities. Full backstory and challenge available [here](https://priceonomics.com/the-priceonomics-data-puzzle-treefortbnb/).
 
 More specifically, Priceonomics requested us to:
