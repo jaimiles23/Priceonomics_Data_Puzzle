@@ -12,6 +12,10 @@ More specifically, Priceonomics requested us to:
 - Send us back a table with a list of the median price in each city, ranked from most to least expensive.
 - Restrict your analysis to just to the "top 100" cities that have the most units on the market.
 
+<br>
+<a href = "#priceonomics-data-puzzle"> :arrow_up: Table of Contents </a>
+<br>
+<br>
 
 ## Directory
 This repository contains solutions to the Priceonomics Treefortbnb challenge in R and Python. Note: Python analysis in Jupyter Notebook and rendered to HTML for in-line analysis.
@@ -22,6 +26,11 @@ Solutions used the following steps.
 4. Conduct stated analysis
 5. Additional EDA
 
+
+<br>
+<a href = "#priceonomics-data-puzzle"> :arrow_up: Table of Contents </a>
+<br>
+<br>
 
 ## Results
 Median prices for the top 100 cities in the dataset are available in the *solution.csv*. 
@@ -39,6 +48,11 @@ Below are the top 10 results:
 8 | Manhattan Beach | CA | 209
 9 | Charlotte | NC | 200
 10 | Sonoma | CA | 200
+
+<br>
+<a href = "#priceonomics-data-puzzle"> :arrow_up: Table of Contents </a>
+<br>
+<br>
 
 
 ## Additional analysis
@@ -93,3 +107,8 @@ To better represent normal, I re-calculated the median price of booking a treefo
 
 
 Of course, it doesn't matter whether or not the listings had reviews --Treefort BnB is fictional and none of the records represent a _real_ experience. However, this is a useful exercise to demonstrate how a single (robust) measure of central tendency can tell a misleading story and you should always be ready to dig deeper into the data (:
+
+<br>
+<a href = "#priceonomics-data-puzzle"> :arrow_up: Table of Contents </a>
+<br>
+<br>
