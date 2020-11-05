@@ -90,14 +90,13 @@ Section Steps
 # Import data
 ##########
 
-## Get current working directory for import (if needed)
-getwd()   # C:/Users/Jai/Documents/
+filename_weburl = "https://pix-media.priceonomics-media.com/Data+for+TreefortBnB+Puzzle.csv"
 
-data_treefortbnb <- read.csv("C:/Users/Jai/Documents/Data+for+TreefortBnB+Puzzle.csv",
-                             header = TRUE,
-                             sep = ",",
-                             strip.white = TRUE
-                            )
+data_treefortbnb <- read.csv( filename_weburl,
+                              header = TRUE,
+                              sep = ",",
+                              strip.white = TRUE
+)
 View(data_treefortbnb)
 
 
